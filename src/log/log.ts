@@ -27,7 +27,10 @@ export const loggerOptions: LoggerOptions = {
       : false,
 };
 
-export const log: Logger = Pino(
+const log: Logger = Pino(
   loggerOptions,
   destination(process.env.LOG_FILE_NAME),
 );
+
+export default log;
+

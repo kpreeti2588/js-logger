@@ -1,5 +1,5 @@
 import { LoggerModule as PinoLoggerModule } from 'nestjs-pino';
-import { log } from './log';
+import log from './log';
 import { Module, RequestMethod } from '@nestjs/common';
 
 @Module({
